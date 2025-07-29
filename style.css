@@ -1,0 +1,26 @@
+body {
+    font-family: 'Inter', sans-serif !important;
+}
+
+.fa,
+.fas,
+.far,
+.fal,
+.fab {
+    font-family: "Font Awesome 6 Free", "Font Awesome 6 Brands" !important;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+html,
+body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+html {
+    scroll-padding-top: 6rem;
+    /* Adjust as per your header height */
+}

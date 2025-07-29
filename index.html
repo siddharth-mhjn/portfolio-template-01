@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    window.FontAwesomeConfig = { autoReplaceSvg: 'nest' };
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: "#FF6B6B",
+            secondary: "#4ECDC4",
+            accent: "#FFD93D",
+            highlight: "#1A535C",
+            background: "#F7FFF7"
+          },
+          fontFamily: {
+            sans: ["Inter", "sans-serif"]
+          },
+          boxShadow: {
+            bento: "0 4px 15px rgba(0, 0, 0, 0.08)",
+            "bento-hover": "0 8px 25px rgba(0, 0, 0, 0.12)"
+          }
+        }
+      }
+    };
+  </script>
+  <title>Anshupriya Singh | Data Analyst &amp; Insights Specialist</title>
+  <link rel="icon" type="image/jpeg" href="assets/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="bg-background font-sans dark:bg-gray-900 dark:text-gray-100">
+
+  <header class="sticky top-0 z-50 bg-white bg-opacity-95 backdrop-blur-sm shadow-sm dark:bg-gray-800">
+    <div class="max-w-7xl mx-auto px-6 md:px-10 py-4 flex justify-between items-center">
+      <div class="text-2xl font-bold text-highlight dark:text-white">
+        <span class="text-primary">Anshu</span>priya Singh
+      </div>
+
+      <nav class="hidden md:flex space-x-8">
+        <a href="#about" class="hover:text-primary transition-colors">About</a>
+        <a href="#projects" class="hover:text-primary transition-colors">Projects</a>
+        <a href="#resume" class="hover:text-primary transition-colors">Resume</a>
+        <a href="#contact" class="hover:text-primary transition-colors">Contact</a>
+      </nav>
+
+      <div class="flex items-center gap-4">
+        <button id="theme-toggle" class="text-xl">
+          <i id="theme-icon" class="fa-solid fa-moon"></i>
+        </button>
+
+        <button id="menu-btn" class="md:hidden text-2xl">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobile-menu" class="hidden md:hidden flex flex-col bg-white dark:bg-gray-800 px-6 pb-4 space-y-3">
+      <a href="#about" class="hover:text-primary">About</a>
+      <a href="#projects" class="hover:text-primary">Projects</a>
+      <a href="#resume" class="hover:text-primary">Resume</a>
+      <a href="#contact" class="hover:text-primary">Contact</a>
+    </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-6 md:px-10 py-12">
+    <!-- Hero Section / About Me -->
+    <section class="mb-16" id="about">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <div
+          class="lg:col-span-2 bg-white rounded-3xl shadow-bento p-8 hover:shadow-bento-hover transition-shadow duration-300 dark:bg-gray-800">
+          <div class="flex flex-col md:flex-row gap-8 items-start">
+            <div class="w-32 h-32 rounded-full overflow-hidden flex-shrink-0 border-4 border-secondary">
+              <img alt="Anshupriya Singh" class="w-full h-full object-cover" src="assets/ProfilePic.png" />
+            </div>
+            <div>
+              <h1 class="text-3xl md:text-4xl font-bold text-highlight mb-3 dark:text-white">
+                Anshupriya Singh
+              </h1>
+              <h2 class="text-xl text-primary font-medium mb-4">
+                Data Analyst &amp; Insights Specialist
+              </h2>
+              <p class="text-gray-700 mb-6 dark:text-gray-300">
+                I'm Anshupriya, a Data Analyst & Insights Specialist skilled in SQL, Power BI, Python, and Excel. I have
+                experience optimizing ETL pipelines, building dashboards, and improving forecasting accuracy. Certified
+                in Power BI and Google Data Analytics, I’m pursuing an MBA in Data Science to deliver impactful,
+                data-driven business insights. I thrive on turning complex data into clear strategies that drive growth
+                and efficiency, bridging the gap between technical details and business goals while creating measurable
+                value for organizations.
+              </p>
+              <div class="flex flex-wrap gap-6">
+                <a href="#contact">
+                  <!-- <span
+                    class="bg-primary hover:bg-opacity-90 text-white px-6 py-2 rounded-full transition-all cursor-pointer"> -->
+                  <span
+                    class="border-2 border-primary text-primary bg-primary text-white hover:bg-opacity-90 px-6 py-2 rounded-full transition-all cursor-pointer">
+                    Get in Touch
+                  </span></a>
+                <a href="#projects"><span
+                    class="border-2 border-primary text-primary hover:bg-primary hover:text-white px-6 py-2 rounded-full transition-all cursor-pointer">
+                    View Projects
+                  </span></a>
+                <a href="#resume"><span
+                    class="border-2 border-primary text-primary hover:bg-primary hover:text-white px-6 py-2 rounded-full transition-all cursor-pointer">
+                    View Resume
+                  </span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="bg-white rounded-3xl shadow-bento p-8 hover:shadow-bento-hover transition-shadow duration-300 dark:bg-gray-800">
+          <h3 class="text-xl font-semibold text-highlight mb-6 flex items-center dark:text-white">
+            <i class="fa-solid fa-certificate text-accent mr-2">
+            </i>
+            Certifications
+          </h3>
+          <ul class="space-y-4">
+            <li class="flex items-start">
+              <div class="bg-secondary bg-opacity-10 p-2 rounded-lg mr-3">
+                <i class="fa-brands fa-microsoft text-secondary">
+                </i>
+              </div>
+              <div>
+                <h4 class="font-medium">
+                  Power BI Data Analyst Associate (PL-300)
+                </h4>
+                <p class="text-sm text-gray-600 dark:text-gray-300">
+                  Microsoft
+                </p>
+              </div>
+            </li>
+            <li class="flex items-start">
+              <div class="bg-primary bg-opacity-10 p-2 rounded-lg mr-3">
+                <i class="fa-brands fa-google text-primary">
+                </i>
+              </div>
+              <div>
+                <h4 class="font-medium">
+                  Google Data Analytics Professional
+                </h4>
+                <p class="text-sm text-gray-600 dark:text-gray-300">
+                  Google
+                </p>
+              </div>
+            </li>
+            <li class="flex items-start">
+              <div class="bg-accent bg-opacity-10 p-2 rounded-lg mr-3">
+                <!-- <i class="fa-solid fa-robot text-accent">
+          </i> -->
+                <img class="text-highlight dark:text-white"
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABt0lEQVR4AeWXAWSWQRjHf/c8z91mKDU0AZWAJAQkYEZggy8yexeEhtAKgA+EEgCCau8WX4kUK1FCiIRAIQiFKCJGM9/XdcJhsbzcoT9/z/99wY+7u3seN8PyW8HagN55xJUvFNZvgJGgCLYV61OHtlvsffiECz/LAiRbqop9j75r+HbA8itgVBogZSX5g+JXDVm9zfmPNQBSNvww1peKrgzZc/8msz+KAig+5T/eiH6ghHaSuWd93LAcQJYFj2GfY11zWHud6XfFAfJvw94YYUUJgz7Hv+4Q4NJVQecF2d8RIFVL2W9GP5Z0pN16nyObfwUA6NHTDQ5PC74RZE7QiQ4A2b+Uvxl+ILj2IgdfbwuQ6xT9XWNoTyOMYiejXTeAPPv3hm8Dbu0ck5+2BcjV49oBJTSGLgj+UFeAbImGSngea+vYmdwCN054rBH0tBJ2dwLI7PhHneXW+Bjjs4IuKn5GMS0KkGuJ9SnPaN6wRrCjxQFyXebFMUMWlXBG0X3/B8AS96Y8E52WoP4mrH8M619E9a/i7DHSRrCyj1G157h+Q1K/JavflNZvy+sPJvVHs/rDafXx/BdA6rPN7TOYBgAAAABJRU5ErkJggg=="
+                  alt="accenture north america logo" style="width: 20px; height: 20px;">
+              </div>
+              <div>
+                <h4 class="font-medium">
+                  Data Analytics and Visualization Job Simulation
+                </h4>
+                <p class="text-sm text-gray-600 dark:text-gray-300">
+                  Accenture North America
+                </p>
+              </div>
+            </li>
+            <li class="flex items-start">
+              <div class="bg-highlight bg-opacity-10 p-2 rounded-lg mr-3">
+                <!-- <i class="fa-solid fa-robot text-highlight dark:text-white">
+          </i> -->
+                <img class="text-highlight dark:text-white" src="https://assets.kpmg.com/is/image/kpmg/kpmg-logo-1"
+                  alt="KPMG logo" style="width: 20px; height: 20px;">
+              </div>
+              <div>
+                <h4 class="font-medium">
+                  Data Analytics Consulting Virtual Internship
+                </h4>
+                <p class="text-sm text-gray-600 dark:text-gray-300">
+                  KPMG
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- Skills Section -->
+    <section class="mb-16" id="skills">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div
+          class="bg-white rounded-3xl shadow-bento p-8 hover:shadow-bento-hover transition-shadow duration-300 dark:bg-gray-800"
+          id="technical-skills">
+          <h3 class="text-xl font-semibold text-highlight mb-6 flex items-center dark:text-white">
+            <i class="fa-solid fa-code text-primary mr-2">
+            </i>
+            Technical Skills
+          </h3>
+          <div class="flex flex-wrap gap-3">
+            <span class="bg-secondary bg-opacity-10 text-secondary px-3 py-1 rounded-full text-sm">
+              SQL
+            </span>
+            <span class="bg-primary bg-opacity-10 text-primary px-3 py-1 rounded-full text-sm">
+              Python
+            </span>
+            <span class="bg-accent bg-opacity-10 text-accent px-3 py-1 rounded-full text-sm">
+              Power BI
+            </span>
+            <span class="bg-highlight bg-opacity-10 text-highlight px-3 py-1 rounded-full text-sm dark:text-white">
+              Excel
+            </span>
+            <span class="bg-secondary bg-opacity-10 text-secondary px-3 py-1 rounded-full text-sm">
+              Tableau
+            </span>
+            <span class="bg-primary bg-opacity-10 text-primary px-3 py-1 rounded-full text-sm">
+              R
+            </span>
+            <span class="bg-accent bg-opacity-10 text-accent px-3 py-1 rounded-full text-sm">
+              Pandas
+            </span>
+            <span class="bg-highlight bg-opacity-10 text-highlight px-3 py-1 rounded-full text-sm dark:text-white">
+              NumPy
+            </span>
+          </div>
+        </div>
+        <div
+          class="bg-white rounded-3xl shadow-bento p-8 hover:shadow-bento-hover transition-shadow duration-300 dark:bg-gray-800"
+          id="data-skills">
+          <h3 class="text-xl font-semibold text-highlight mb-6 flex items-center dark:text-white">
+            <i class="fa-solid fa-database text-secondary mr-2">
+            </i>
+            Data Expertise
+          </h3>
+          <div class="flex flex-wrap gap-3">
+            <span class="bg-secondary bg-opacity-10 text-secondary px-3 py-1 rounded-full text-sm">
+              ETL Pipelines
+            </span>
+            <span class="bg-primary bg-opacity-10 text-primary px-3 py-1 rounded-full text-sm">
+              Data Cleaning
+            </span>
+            <span class="bg-accent bg-opacity-10 text-accent px-3 py-1 rounded-full text-sm">
+              Data Visualization
+            </span>
+            <span class="bg-highlight bg-opacity-10 text-highlight px-3 py-1 rounded-full text-sm dark:text-white">
+              Forecasting
+            </span>
+            <span class="bg-secondary bg-opacity-10 text-secondary px-3 py-1 rounded-full text-sm">
+              Data Modeling
+            </span>
+          </div>
+        </div>
+        <div
+          class="bg-white rounded-3xl shadow-bento p-8 hover:shadow-bento-hover transition-shadow duration-300 dark:bg-gray-800"
+          id="analysis-skills">
+          <h3 class="text-xl font-semibold text-highlight mb-6 flex items-center dark:text-white">
+            <i class="fa-solid fa-chart-line text-accent mr-2">
+            </i>
+            Analysis Types
+          </h3>
+          <div class="flex flex-wrap gap-3">
+            <span class="bg-secondary bg-opacity-10 text-secondary px-3 py-1 rounded-full text-sm">
+              Predictive Analysis
+            </span>
+            <span class="bg-primary bg-opacity-10 text-primary px-3 py-1 rounded-full text-sm">
+              Trend Analysis
+            </span>
+            <span class="bg-accent bg-opacity-10 text-accent px-3 py-1 rounded-full text-sm">
+              Cohort Analysis
+            </span>
+            <span class="bg-highlight bg-opacity-10 text-highlight px-3 py-1 rounded-full text-sm dark:text-white">
+              A/B Testing
+            </span>
+            <span class="bg-secondary bg-opacity-10 text-secondary px-3 py-1 rounded-full text-sm">
+              Statistical Analysis
+            </span>
+          </div>
+        </div>
+        <div
+          class="bg-white rounded-3xl shadow-bento p-8 hover:shadow-bento-hover transition-shadow duration-300 dark:bg-gray-800"
+          id="soft-skills">
+          <h3 class="text-xl font-semibold text-highlight mb-6 flex items-center dark:text-white">
+            <i class="fa-solid fa-users text-highlight mr-2 dark:text-white">
+            </i>
+            Soft Skills
+          </h3>
+          <div class="flex flex-wrap gap-3">
+            <span class="bg-secondary bg-opacity-10 text-secondary px-3 py-1 rounded-full text-sm">
+              Communication
+            </span>
+            <span class="bg-primary bg-opacity-10 text-primary px-3 py-1 rounded-full text-sm">
+              Problem-Solving
+            </span>
+            <span class="bg-accent bg-opacity-10 text-accent px-3 py-1 rounded-full text-sm">
+              Storytelling
+            </span>
+            <span class="bg-highlight bg-opacity-10 text-highlight px-3 py-1 rounded-full text-sm dark:text-white">
+              Critical Thinking
+            </span>
+            <span class="bg-secondary bg-opacity-10 text-secondary px-3 py-1 rounded-full text-sm">
+              Team Collaboration
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Projects Section -->
+    <section class="mb-16" id="projects">
+      <h2 class="text-3xl font-bold text-highlight mb-10 flex items-center dark:text-white">
+        <i class="fa-solid fa-folder-open text-primary mr-3">
+        </i>
+        Featured Projects
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Project 1 -->
+        <div
+          class="bg-white rounded-3xl shadow-bento overflow-hidden hover:shadow-bento-hover transition-all duration-300 flex flex-col h-[450px] dark:bg-gray-800"
+          id="project-1">
+          <div class="h-48 bg-primary bg-opacity-10 relative">
+            <img alt="data dashboard with retail sales charts, professional visualization, power bi"
+              class="w-full h-full object-cover" src="assets/Project1Banner.jpeg" />
+            <div
+              class="absolute top-4 right-4 bg-white rounded-full px-3 py-1 text-xs font-medium text-primary dark:bg-gray-800">
+              Power BI + SQL
+            </div>
+          </div>
+          <div class="p-6 flex flex-col flex-grow">
+            <h3 class="text-xl font-bold text-highlight mb-2 dark:text-white">
+              Blinkit Sales Dashboard
+            </h3>
+            <p class="text-gray-600 mb-4 text-sm flex-grow dark:text-gray-300">
+              A dashboard for Blinkit's sales using DAX to show metrics, trends, insights, and performance across
+              outlets, products, and customer ratings. It highlights revenue patterns and market trends.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="bg-secondary bg-opacity-10 text-secondary px-2 py-1 rounded-md text-xs">
+                Power BI
+              </span>
+              <span class="bg-primary bg-opacity-10 text-primary px-2 py-1 rounded-md text-xs">
+                SQL
+              </span>
+              <span class="bg-accent bg-opacity-10 text-accent px-2 py-1 rounded-md text-xs">
+                DAX
+              </span>
+            </div>
+            <a href="https://github.com/anshupriya01/Blinkit-Sales-Analysis" target="_blank" rel="noopener noreferrer">
+              <div class="flex gap-3">
+                <span
+                  class="bg-primary hover:bg-opacity-90 text-white px-4 py-2 rounded-lg text-sm transition-all flex-grow text-center cursor-pointer">
+                  View Project
+                </span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- Project 2 -->
+        <div
+          class="bg-white rounded-3xl shadow-bento overflow-hidden hover:shadow-bento-hover transition-all duration-300 flex flex-col h-[450px] dark:bg-gray-800"
+          id="project-2">
+          <div class="h-48 bg-secondary bg-opacity-10 relative">
+            <img alt="ETL pipeline visualization with data flow and forecasting charts, python code, professional"
+              class="w-full h-full object-cover"
+              src="https://storage.googleapis.com/uxpilot-auth.appspot.com/1ef52c9ff7-a3dbb3925d917c8aca02.png" />
+            <div
+              class="absolute top-4 right-4 bg-white rounded-full px-3 py-1 text-xs font-medium text-secondary dark:bg-gray-800">
+              SQL + Data Analysis
+            </div>
+          </div>
+          <div class="p-6 flex flex-col flex-grow">
+            <h3 class="text-xl font-bold text-highlight mb-2 dark:text-white">
+              Covid-19 Data Exploration
+            </h3>
+            <p class="text-gray-600 mb-4 text-sm flex-grow dark:text-gray-300">
+              A data exploration project analyzing 50,000+ records to uncover trends in infection and recovery rates
+              using SQL queries, providing insights to guide public health decisions.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="bg-secondary bg-opacity-10 text-secondary px-2 py-1 rounded-md text-xs">
+                SQL
+              </span>
+              <span class="bg-primary bg-opacity-10 text-primary px-2 py-1 rounded-md text-xs">
+                Data Analysis
+              </span>
+            </div>
+            <a href="https://github.com/anshupriya01/Covid-19" target="_blank" rel="noopener noreferrer">
+              <div class="flex gap-3">
+                <span
+                  class="bg-secondary hover:bg-opacity-90 text-white px-4 py-2 rounded-lg text-sm transition-all flex-grow text-center cursor-pointer">
+                  View Project
+                </span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- Project 3 -->
+        <!-- <div class="bg-white rounded-3xl shadow-bento overflow-hidden hover:shadow-bento-hover transition-all duration-300 flex flex-col h-[450px] dark:bg-gray-800" id="project-3">
+       <div class="h-48 bg-accent bg-opacity-10 relative">
+        <img alt="e-commerce product analysis dashboard with scatter plots, bar charts, professional visualization" class="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/6503aa4e92-eff3af8c59db3049524e.png"/>
+        <div class="absolute top-4 right-4 bg-white rounded-full px-3 py-1 text-xs font-medium text-accent dark:bg-gray-800">
+         Excel + Survey Analysis
+        </div>
+       </div>
+       <div class="p-6 flex flex-col flex-grow">
+        <h3 class="text-xl font-bold text-highlight mb-2 dark:text-white">
+         Data Professionals Survey Analysis
+        </h3>
+        <p class="text-gray-600 mb-4 text-sm flex-grow dark:text-gray-300">
+         A global survey analysis developed to evaluate key aspects like salary satisfaction, work-life balance, and preferred programming languages among data professionals. The analysis provides insights to improve organizational strategies in the data industry.
+        </p>
+        <div class="flex flex-wrap gap-2 mb-4">
+         <span class="bg-secondary bg-opacity-10 text-secondary px-2 py-1 rounded-md text-xs">
+          Excel
+         </span>
+         <span class="bg-primary bg-opacity-10 text-primary px-2 py-1 rounded-md text-xs">
+          Survey Analysis
+         </span>
+        </div>
+        <div class="flex gap-3">
+         <span class="bg-accent hover:bg-opacity-90 text-highlight px-4 py-2 rounded-lg text-sm transition-all flex-grow text-center cursor-pointer dark:text-white">
+          View Project
+         </span>
+        </div>
+       </div>
+      </div> -->
+        <!-- Project 4 -->
+        <!-- <div class="bg-white rounded-3xl shadow-bento overflow-hidden hover:shadow-bento-hover transition-all duration-300 flex flex-col h-[450px] dark:bg-gray-800" id="project-4">
+       <div class="h-48 bg-highlight bg-opacity-10 relative">
+        <img alt="covid-19 data visualization dashboard with trend lines and map, professional analysis" class="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/37622fa898-513d5be9de8d36a8ca98.png"/>
+        <div class="absolute top-4 right-4 bg-white rounded-full px-3 py-1 text-xs font-medium text-highlight dark:bg-gray-800 dark:text-white">
+         Python + SQL
+        </div>
+       </div>
+       <div class="p-6 flex flex-col flex-grow">
+        <h3 class="text-xl font-bold text-highlight mb-2 dark:text-white">
+         COVID-19 Trend Analysis
+        </h3>
+        <p class="text-gray-600 mb-4 text-sm flex-grow dark:text-gray-300">
+         An in-depth analysis of COVID-19 data, including case trends, vaccination rates, and regional comparisons. Visualizations help identify patterns and correlations in the pandemic data.
+        </p>
+        <div class="flex flex-wrap gap-2 mb-4">
+         <span class="bg-secondary bg-opacity-10 text-secondary px-2 py-1 rounded-md text-xs">
+          Python
+         </span>
+         <span class="bg-primary bg-opacity-10 text-primary px-2 py-1 rounded-md text-xs">
+          SQL
+         </span>
+         <span class="bg-accent bg-opacity-10 text-accent px-2 py-1 rounded-md text-xs">
+          Pandas
+         </span>
+         <span class="bg-highlight bg-opacity-10 text-highlight px-2 py-1 rounded-md text-xs dark:text-white">
+          Plotly
+         </span>
+        </div>
+        <div class="flex gap-3">
+         <span class="bg-highlight hover:bg-opacity-90 text-white px-4 py-2 rounded-lg text-sm transition-all flex-grow text-center cursor-pointer">
+          View Project
+         </span>
+        </div>
+       </div>
+      </div> -->
+        <!-- Project 5 -->
+        <!-- <div class="bg-white rounded-3xl shadow-bento overflow-hidden hover:shadow-bento-hover transition-all duration-300 flex flex-col h-[450px] dark:bg-gray-800" id="project-5">
+       <div class="h-48 bg-primary bg-opacity-10 relative">
+        <img alt="netflix data visualization dashboard with content analysis, professional design" class="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/210fd530bd-517f7ff8b14b79522610.png"/>
+        <div class="absolute top-4 right-4 bg-white rounded-full px-3 py-1 text-xs font-medium text-primary dark:bg-gray-800">
+         Python + Power BI
+        </div>
+       </div>
+       <div class="p-6 flex flex-col flex-grow">
+        <h3 class="text-xl font-bold text-highlight mb-2 dark:text-white">
+         Netflix Data Cleaning &amp; Insights
+        </h3>
+        <p class="text-gray-600 mb-4 text-sm flex-grow dark:text-gray-300">
+         A project focused on cleaning and analyzing Netflix content data to uncover trends in content production, viewer 
+        </p>
+        <div class="flex flex-wrap gap-2 mb-4">
+         <span class="bg-secondary bg-opacity-10 text-secondary px-2 py-1 rounded-md text-xs">
+          Python
+         </span>
+         <span class="bg-primary bg-opacity-10 text-primary px-2 py-1 rounded-md text-xs">
+          Power BI
+         </span>
+         <span class="bg-accent bg-opacity-10 text-accent px-2 py-1 rounded-md text-xs">
+          Pandas
+         </span>
+         <span class="bg-highlight bg-opacity-10 text-highlight px-2 py-1 rounded-md text-xs dark:text-white">
+          NumPy
+         </span>
+        </div>
+        <div class="flex gap-3">
+         <span class="bg-primary hover:bg-opacity-90 text-white px-4 py-2 rounded-lg text-sm transition-all flex-grow text-center cursor-pointer">
+          View Project
+         </span>
+        </div>
+       </div>
+      </div> -->
+        <!-- More Projects Card -->
+        <div
+          class="bg-gradient-to-br from-primary to-secondary rounded-3xl shadow-bento overflow-hidden hover:shadow-bento-hover transition-all duration-300 flex flex-col h-[450px] justify-center items-center text-center p-8"
+          id="more-projects">
+          <div class="text-white mb-6">
+            <i class="fa-solid fa-code-branch text-6xl">
+            </i>
+          </div>
+          <h3 class="text-2xl font-bold text-white mb-4">
+            More Projects
+          </h3>
+          <p class="text-white text-opacity-90 mb-8">
+            I'm constantly working on new data projects and analyses. Check back soon for more!
+          </p>
+          <a href="https://github.com/anshupriya01" target="_blank" rel="noopener noreferrer"><span
+              class="bg-white text-primary hover:bg-opacity-90 px-6 py-3 rounded-full text-sm font-medium transition-all cursor-pointer dark:bg-gray-800">
+              View All Projects
+            </span></a>
+        </div>
+      </div>
+    </section>
+    <!-- Resume Section -->
+    <section class="mb-16" id="resume">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div
+          class="md:col-span-2 bg-white rounded-3xl shadow-bento p-8 hover:shadow-bento-hover transition-shadow duration-300 dark:bg-gray-800">
+          <h2 class="text-2xl font-bold text-highlight mb-6 flex items-center dark:text-white">
+            <i class="fa-solid fa-briefcase text-secondary mr-3">
+            </i>
+            Work Experience
+          </h2>
+          <div class="space-y-6">
+            <div class="border-l-4 border-secondary pl-4 pb-6">
+              <div class="flex justify-between items-start">
+                <h3 class="text-xl font-semibold text-highlight dark:text-white">
+                  Data Analyst
+                </h3>
+                <span class="bg-secondary bg-opacity-10 text-secondary px-3 py-1 rounded-full text-xs">
+                  July 2022 - Present
+                </span>
+              </div>
+              <p class="text-primary font-medium mb-2">
+                Wipro Technologies
+              </p>
+              <p class="text-gray-600 text-sm dark:text-gray-300">
+                • Optimized ETL pipelines, reducing data processing time by 40% and saving 400+ hours annually
+                <br />
+                • Designed revenue forecasting dashboards in Power BI, improving accuracy by 25%
+                <br />
+                • Conducted root-cause analysis on 100,000+ operational records, enhancing decision-making throughput by
+                20%
+                <br />
+                • Automated Excel-based reporting, reducing manual effort by 60% across teams
+                <br />
+                • Audited 75+ recurring reports, implementing corrective logic to boost reporting accuracy by 30%
+              </p>
+            </div>
+            <!-- <div class="border-l-4 border-primary pl-4">
+         <div class="flex justify-between items-start">
+          <h3 class="text-xl font-semibold text-highlight dark:text-white">
+           Business Intelligence Intern
+          </h3>
+          <span class="bg-primary bg-opacity-10 text-primary px-3 py-1 rounded-full text-xs">
+           2019 - 2020
+          </span>
+         </div>
+         <p class="text-secondary font-medium mb-2">
+          Tech Solutions Inc.
+         </p>
+         <p class="text-gray-600 text-sm dark:text-gray-300">
+          • Created interactive Power BI dashboards for sales performance tracking
+          <br/>
+          • Assisted in database optimization and SQL query performance tuning
+          <br/>
+          • Developed Excel macros to automate routine data processing tasks
+         </p>
+        </div> -->
+          </div>
+        </div>
+        <div
+          class="bg-white rounded-3xl shadow-bento overflow-hidden hover:shadow-bento-hover transition-all duration-300 dark:bg-gray-800">
+          <div class="h-48 bg-gradient-to-r from-highlight to-secondary flex items-center justify-center">
+            <i class="fa-solid fa-file-pdf text-white text-6xl">
+            </i>
+          </div>
+          <div class="p-6 text-center">
+            <h3 class="text-xl font-bold text-highlight mb-4 dark:text-white">
+              Download My Resume
+            </h3>
+            <p class="text-gray-600 mb-6 dark:text-gray-300">
+              Get a complete overview of my skills, experience, and qualifications in a downloadable PDF format.
+            </p>
+            <a href="Resume.pdf" target="_blank" rel="noopener noreferrer"><span
+                class="inline-block bg-highlight hover:bg-opacity-90 text-white px-6 py-3 rounded-lg transition-all cursor-pointer">
+                <i class="fa-solid fa-download mr-2">
+                </i>
+                Download Resume
+              </span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section -->
+    <section class="mb-16" id="contact">
+      <h2 class="text-3xl font-bold text-highlight mb-10 flex items-center dark:text-white">
+        <i class="fa-solid fa-envelope text-accent mr-3">
+        </i>
+        Get In Touch
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div
+          class="bg-white rounded-3xl shadow-bento p-6 hover:shadow-bento-hover transition-all duration-300 hover:scale-105 dark:bg-gray-800"
+          id="email-contact">
+          <div class="bg-primary bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mb-4 mx-auto">
+            <i class="fa-solid fa-envelope text-primary text-2xl">
+            </i>
+          </div>
+          <h3 class="text-lg font-semibold text-highlight text-center mb-2 dark:text-white">
+            Email
+          </h3>
+          <p class="text-gray-600 text-center mb-4 text-sm dark:text-gray-300">
+            Feel free to reach out via email
+          </p>
+          <a href="mailto:singhanshupriya01@gmail.com"><span
+              class="block bg-primary hover:bg-opacity-90 text-white px-4 py-2 rounded-lg text-sm text-center transition-all cursor-pointer">
+              Send Email
+            </span></a>
+        </div>
+        <div
+          class="bg-white rounded-3xl shadow-bento p-6 hover:shadow-bento-hover transition-all duration-300 hover:scale-105 dark:bg-gray-800"
+          id="linkedin-contact">
+          <div class="bg-secondary bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mb-4 mx-auto">
+            <i class="fa-brands fa-linkedin-in text-secondary text-2xl">
+            </i>
+          </div>
+          <h3 class="text-lg font-semibold text-highlight text-center mb-2 dark:text-white">
+            LinkedIn
+          </h3>
+          <p class="text-gray-600 text-center mb-4 text-sm dark:text-gray-300">
+            Connect with me professionally
+          </p>
+          <a href="https://www.linkedin.com/in/anshupriya-singh01/" target="_blank" rel="noopener noreferrer"><span
+              class="block bg-secondary hover:bg-opacity-90 text-white px-4 py-2 rounded-lg text-sm text-center transition-all cursor-pointer"
+              target="_blank">
+              Connect
+            </span></a>
+        </div>
+        <div
+          class="bg-white rounded-3xl shadow-bento p-6 hover:shadow-bento-hover transition-all duration-300 hover:scale-105 dark:bg-gray-800"
+          id="github-contact">
+          <div class="bg-accent bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mb-4 mx-auto">
+            <i class="fa-brands fa-github text-accent text-2xl">
+            </i>
+          </div>
+          <h3 class="text-lg font-semibold text-highlight text-center mb-2 dark:text-white">
+            GitHub
+          </h3>
+          <p class="text-gray-600 text-center mb-4 text-sm dark:text-gray-300">
+            Check out my code repositories
+          </p>
+          <a href="https://github.com/anshupriya01" target="_blank" rel="noopener noreferrer"><span
+              class="block bg-accent hover:bg-opacity-90 text-highlight px-4 py-2 rounded-lg text-sm text-center transition-all cursor-pointer dark:text-white"
+              target="_blank">
+              View Projects
+            </span></a>
+        </div>
+        <!-- <div class="bg-white rounded-3xl shadow-bento p-6 hover:shadow-bento-hover transition-all duration-300 hover:scale-105 dark:bg-gray-800" id="twitter-contact">
+       <div class="bg-highlight bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mb-4 mx-auto">
+        <i class="fa-brands fa-twitter text-highlight text-2xl dark:text-white">
+        </i>
+       </div>
+       <h3 class="text-lg font-semibold text-highlight text-center mb-2 dark:text-white">
+        Twitter
+       </h3>
+       <p class="text-gray-600 text-center mb-4 text-sm dark:text-gray-300">
+        Follow me for data insights
+       </p>
+       <span class="block bg-highlight hover:bg-opacity-90 text-white px-4 py-2 rounded-lg text-sm text-center transition-all cursor-pointer" target="_blank">
+        Follow
+       </span>
+      </div> -->
+      </div>
+    </section>
+  </main>
+  <footer class="bg-highlight text-white py-10" id="footer">
+    <div class="max-w-7xl mx-auto px-6 md:px-10">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="mb-6 md:mb-0">
+          <h3 class="text-xl font-bold mb-2">
+            Anshupriya Singh
+          </h3>
+          <p class="text-white text-opacity-80">
+            Data Analyst &amp; Insights Specialist
+          </p>
+        </div>
+        <div class="flex space-x-4">
+          <a href="https://www.linkedin.com/in/anshupriya-singh01/" target="_blank" rel="noopener noreferrer"><span
+              class="w-10 h-10 rounded-full bg-white bg-opacity-20 flex items-center justify-center hover:bg-opacity-30 transition-all cursor-pointer dark:bg-gray-800">
+              <i class="fa-brands fa-linkedin-in">
+              </i>
+            </span></a>
+          <a href="https://github.com/anshupriya01" target="_blank" rel="noopener noreferrer"><span
+              class="w-10 h-10 rounded-full bg-white bg-opacity-20 flex items-center justify-center hover:bg-opacity-30 transition-all cursor-pointer dark:bg-gray-800">
+              <i class="fa-brands fa-github">
+              </i>
+            </span></a>
+          <!-- <span class="w-10 h-10 rounded-full bg-white bg-opacity-20 flex items-center justify-center hover:bg-opacity-30 transition-all cursor-pointer dark:bg-gray-800">
+        <i class="fa-brands fa-twitter">
+        </i>
+       </span> -->
+          <a href="mailto:singhanshupriya01@gmail.com"><span
+              class="w-10 h-10 rounded-full bg-white bg-opacity-20 flex items-center justify-center hover:bg-opacity-30 transition-all cursor-pointer dark:bg-gray-800">
+              <i class="fa-solid fa-envelope">
+              </i>
+            </span></a>
+        </div>
+      </div>
+      <div
+        class="border-t border-white border-opacity-20 mt-8 pt-8 text-white text-opacity-60 text-sm flex flex-col sm:flex-row justify-between items-center gap-2 text-center sm:text-left">
+        <div>&copy; 2023 Anshupriya Singh. All rights reserved.</div>
+        <div>
+          Built &amp; maintained by
+          <a href="https://siddharth.work.gd" target="_blank" class="underline hover:text-white">Siddharth Mahajan</a>
+        </div>
+      </div>
+
+
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
