@@ -27,3 +27,4 @@ AOS.init({
     offset: 50,       // Trigger offset
     // disable: window.innerWidth < 768 // Disable AOS for small screens if needed
   });
+  
