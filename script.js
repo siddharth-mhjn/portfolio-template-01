@@ -25,5 +25,5 @@ AOS.init({
     duration: 1000,   // Animation duration
     once: true,       // Whether animation should happen only once
     offset: 50,       // Trigger offset
-    disable: window.innerWidth < 768 // Disable AOS for small screens if needed
+    // disable: window.innerWidth < 768 // Disable AOS for small screens if needed
   });
