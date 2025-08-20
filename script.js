@@ -20,3 +20,5 @@ themeToggle.addEventListener("click", () => {
     themeIcon.classList.toggle("fa-sun", isDark);
     localStorage.setItem("theme", isDark ? "dark" : "light");
 });
+
+AOS.init({ duration: 10, once: true });
