@@ -21,4 +21,9 @@ themeToggle.addEventListener("click", () => {
     localStorage.setItem("theme", isDark ? "dark" : "light");
 });
 
-AOS.init({ duration: 10, once: true });
+AOS.init({
+    duration: 1000,   // Animation duration
+    once: true,       // Whether animation should happen only once
+    offset: 50,       // Trigger offset
+    disable: window.innerWidth < 768 // Disable AOS for small screens if needed
+  });
