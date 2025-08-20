@@ -37,11 +37,12 @@
     rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body class="bg-background font-sans dark:bg-gray-900 dark:text-gray-100">
 
-  <header class="sticky top-0 z-50 bg-white bg-opacity-95 backdrop-blur-sm shadow-sm dark:bg-gray-800">
+  <header class="sticky top-0 z-50 bg-white bg-opacity-95 backdrop-blur-sm shadow-sm dark:bg-gray-800" data-aos="fade-down">
     <div class="max-w-7xl mx-auto px-6 md:px-10 py-4 flex justify-between items-center">
       <div class="text-2xl font-bold text-highlight dark:text-white">
         <span class="text-primary">Anshu</span>priya Singh
@@ -78,12 +79,12 @@
     <section class="mb-16" id="about">
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
         <div
-          class="lg:col-span-2 bg-white rounded-3xl shadow-bento p-8 hover:shadow-bento-hover transition-shadow duration-300 dark:bg-gray-800">
+          class="lg:col-span-2 bg-white rounded-3xl shadow-bento p-8 hover:shadow-bento-hover transition-shadow duration-300 dark:bg-gray-800" data-aos="fade-right">
           <div class="flex flex-col md:flex-row gap-8 items-start">
-            <div class="w-32 h-32 rounded-full overflow-hidden flex-shrink-0 border-4 border-secondary">
+            <div class="w-32 h-32 rounded-full overflow-hidden flex-shrink-0 border-4 border-secondary" data-aos="zoom-in">
               <img alt="Anshupriya Singh" class="w-full h-full object-cover" src="assets/ProfilePic.png" />
             </div>
-            <div>
+            <div data-aos="zoom-in">
               <h1 class="text-3xl md:text-4xl font-bold text-highlight mb-3 dark:text-white">
                 Anshupriya Singh
               </h1>
@@ -98,7 +99,7 @@
                 and efficiency, bridging the gap between technical details and business goals while creating measurable
                 value for organizations.
               </p>
-              <div class="flex flex-wrap gap-6">
+              <div class="flex flex-wrap gap-6" data-aos="zoom-in" data-aos-delay="200">
                 <a href="#contact">
                   <!-- <span
                     class="bg-primary hover:bg-opacity-90 text-white px-6 py-2 rounded-full transition-all cursor-pointer"> -->
@@ -119,13 +120,13 @@
           </div>
         </div>
         <div
-          class="bg-white rounded-3xl shadow-bento p-8 hover:shadow-bento-hover transition-shadow duration-300 dark:bg-gray-800">
+          class="bg-white rounded-3xl shadow-bento p-8 hover:shadow-bento-hover transition-shadow duration-300 dark:bg-gray-800" data-aos="fade-left">
           <h3 class="text-xl font-semibold text-highlight mb-6 flex items-center dark:text-white">
             <i class="fa-solid fa-certificate text-accent mr-2">
             </i>
             Certifications
           </h3>
-          <ul class="space-y-4">
+          <ul class="space-y-4" data-aos="zoom-in" data-aos-delay="100">
             <li class="flex items-start">
               <div class="bg-secondary bg-opacity-10 p-2 rounded-lg mr-3">
                 <i class="fa-brands fa-microsoft text-secondary">
@@ -196,113 +197,116 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         <div
           class="bg-white rounded-3xl shadow-bento p-8 hover:shadow-bento-hover transition-shadow duration-300 dark:bg-gray-800"
-          id="technical-skills">
+          data-aos="zoom-in" data-aos-delay="100" id="technical-skills">
           <h3 class="text-xl font-semibold text-highlight mb-6 flex items-center dark:text-white">
             <i class="fa-solid fa-code text-primary mr-2">
             </i>
             Technical Skills
           </h3>
           <div class="flex flex-wrap gap-3">
-            <span class="bg-secondary bg-opacity-10 text-secondary px-3 py-1 rounded-full text-sm">
+            <span data-aos="fade-up" data-aos-delay="200" class="bg-secondary bg-opacity-10 text-secondary px-3 py-1 rounded-full text-sm">
               SQL
             </span>
-            <span class="bg-primary bg-opacity-10 text-primary px-3 py-1 rounded-full text-sm">
+            <span data-aos="fade-up" data-aos-delay="300" class="bg-primary bg-opacity-10 text-primary px-3 py-1 rounded-full text-sm">
               Python
             </span>
-            <span class="bg-accent bg-opacity-10 text-accent px-3 py-1 rounded-full text-sm">
+            <span data-aos="fade-up" data-aos-delay="400" class="bg-accent bg-opacity-10 text-accent px-3 py-1 rounded-full text-sm">
               Power BI
             </span>
-            <span class="bg-highlight bg-opacity-10 text-highlight px-3 py-1 rounded-full text-sm dark:text-white">
+            <span data-aos="fade-up" data-aos-delay="500" class="bg-highlight bg-opacity-10 text-highlight px-3 py-1 rounded-full text-sm dark:text-white">
               Excel
             </span>
-            <span class="bg-secondary bg-opacity-10 text-secondary px-3 py-1 rounded-full text-sm">
+            <span data-aos="fade-up" data-aos-delay="600" class="bg-secondary bg-opacity-10 text-secondary px-3 py-1 rounded-full text-sm">
               Tableau
             </span>
-            <span class="bg-primary bg-opacity-10 text-primary px-3 py-1 rounded-full text-sm">
+            <span data-aos="fade-up" data-aos-delay="700" class="bg-primary bg-opacity-10 text-primary px-3 py-1 rounded-full text-sm">
               R
             </span>
-            <span class="bg-accent bg-opacity-10 text-accent px-3 py-1 rounded-full text-sm">
+            <span data-aos="fade-up" data-aos-delay="800" class="bg-accent bg-opacity-10 text-accent px-3 py-1 rounded-full text-sm">
               Pandas
             </span>
-            <span class="bg-highlight bg-opacity-10 text-highlight px-3 py-1 rounded-full text-sm dark:text-white">
+            <span data-aos="fade-up" data-aos-delay="900" class="bg-highlight bg-opacity-10 text-highlight px-3 py-1 rounded-full text-sm dark:text-white">
               NumPy
+            </span>
+            <span data-aos="fade-up" data-aos-delay="1000" class="bg-secondary bg-opacity-10 text-secondary px-3 py-1 rounded-full text-sm">
+              Gen AI
             </span>
           </div>
         </div>
         <div
           class="bg-white rounded-3xl shadow-bento p-8 hover:shadow-bento-hover transition-shadow duration-300 dark:bg-gray-800"
-          id="data-skills">
+          data-aos="zoom-in" data-aos-delay="100" id="data-skills">
           <h3 class="text-xl font-semibold text-highlight mb-6 flex items-center dark:text-white">
             <i class="fa-solid fa-database text-secondary mr-2">
             </i>
             Data Expertise
           </h3>
           <div class="flex flex-wrap gap-3">
-            <span class="bg-secondary bg-opacity-10 text-secondary px-3 py-1 rounded-full text-sm">
+            <span data-aos="fade-up" data-aos-delay="200" class="bg-secondary bg-opacity-10 text-secondary px-3 py-1 rounded-full text-sm">
               ETL Pipelines
             </span>
-            <span class="bg-primary bg-opacity-10 text-primary px-3 py-1 rounded-full text-sm">
+            <span data-aos="fade-up" data-aos-delay="300" class="bg-primary bg-opacity-10 text-primary px-3 py-1 rounded-full text-sm">
               Data Cleaning
             </span>
-            <span class="bg-accent bg-opacity-10 text-accent px-3 py-1 rounded-full text-sm">
+            <span data-aos="fade-up" data-aos-delay="400" class="bg-accent bg-opacity-10 text-accent px-3 py-1 rounded-full text-sm">
               Data Visualization
             </span>
-            <span class="bg-highlight bg-opacity-10 text-highlight px-3 py-1 rounded-full text-sm dark:text-white">
+            <span data-aos="fade-up" data-aos-delay="500" class="bg-highlight bg-opacity-10 text-highlight px-3 py-1 rounded-full text-sm dark:text-white">
               Forecasting
             </span>
-            <span class="bg-secondary bg-opacity-10 text-secondary px-3 py-1 rounded-full text-sm">
+            <span data-aos="fade-up" data-aos-delay="600" class="bg-secondary bg-opacity-10 text-secondary px-3 py-1 rounded-full text-sm">
               Data Modeling
             </span>
           </div>
         </div>
         <div
           class="bg-white rounded-3xl shadow-bento p-8 hover:shadow-bento-hover transition-shadow duration-300 dark:bg-gray-800"
-          id="analysis-skills">
+          data-aos="zoom-in" data-aos-delay="100" id="analysis-skills">
           <h3 class="text-xl font-semibold text-highlight mb-6 flex items-center dark:text-white">
             <i class="fa-solid fa-chart-line text-accent mr-2">
             </i>
             Analysis Types
           </h3>
           <div class="flex flex-wrap gap-3">
-            <span class="bg-secondary bg-opacity-10 text-secondary px-3 py-1 rounded-full text-sm">
+            <span data-aos="fade-up" data-aos-delay="200" class="bg-secondary bg-opacity-10 text-secondary px-3 py-1 rounded-full text-sm">
               Predictive Analysis
             </span>
-            <span class="bg-primary bg-opacity-10 text-primary px-3 py-1 rounded-full text-sm">
+            <span data-aos="fade-up" data-aos-delay="300" class="bg-primary bg-opacity-10 text-primary px-3 py-1 rounded-full text-sm">
               Trend Analysis
             </span>
-            <span class="bg-accent bg-opacity-10 text-accent px-3 py-1 rounded-full text-sm">
+            <span data-aos="fade-up" data-aos-delay="400" class="bg-accent bg-opacity-10 text-accent px-3 py-1 rounded-full text-sm">
               Cohort Analysis
             </span>
-            <span class="bg-highlight bg-opacity-10 text-highlight px-3 py-1 rounded-full text-sm dark:text-white">
+            <span data-aos="fade-up" data-aos-delay="500" class="bg-highlight bg-opacity-10 text-highlight px-3 py-1 rounded-full text-sm dark:text-white">
               A/B Testing
             </span>
-            <span class="bg-secondary bg-opacity-10 text-secondary px-3 py-1 rounded-full text-sm">
+            <span data-aos="fade-up" data-aos-delay="600" class="bg-secondary bg-opacity-10 text-secondary px-3 py-1 rounded-full text-sm">
               Statistical Analysis
             </span>
           </div>
         </div>
         <div
           class="bg-white rounded-3xl shadow-bento p-8 hover:shadow-bento-hover transition-shadow duration-300 dark:bg-gray-800"
-          id="soft-skills">
+          data-aos="zoom-in" data-aos-delay="100" id="soft-skills">
           <h3 class="text-xl font-semibold text-highlight mb-6 flex items-center dark:text-white">
             <i class="fa-solid fa-users text-highlight mr-2 dark:text-white">
             </i>
             Soft Skills
           </h3>
           <div class="flex flex-wrap gap-3">
-            <span class="bg-secondary bg-opacity-10 text-secondary px-3 py-1 rounded-full text-sm">
+            <span data-aos="fade-up" data-aos-delay="200" class="bg-secondary bg-opacity-10 text-secondary px-3 py-1 rounded-full text-sm">
               Communication
             </span>
-            <span class="bg-primary bg-opacity-10 text-primary px-3 py-1 rounded-full text-sm">
+            <span data-aos="fade-up" data-aos-delay="300" class="bg-primary bg-opacity-10 text-primary px-3 py-1 rounded-full text-sm">
               Problem-Solving
             </span>
-            <span class="bg-accent bg-opacity-10 text-accent px-3 py-1 rounded-full text-sm">
+            <span data-aos="fade-up" data-aos-delay="400" class="bg-accent bg-opacity-10 text-accent px-3 py-1 rounded-full text-sm">
               Storytelling
             </span>
-            <span class="bg-highlight bg-opacity-10 text-highlight px-3 py-1 rounded-full text-sm dark:text-white">
+            <span data-aos="fade-up" data-aos-delay="500" class="bg-highlight bg-opacity-10 text-highlight px-3 py-1 rounded-full text-sm dark:text-white">
               Critical Thinking
             </span>
-            <span class="bg-secondary bg-opacity-10 text-secondary px-3 py-1 rounded-full text-sm">
+            <span data-aos="fade-up" data-aos-delay="600" class="bg-secondary bg-opacity-10 text-secondary px-3 py-1 rounded-full text-sm">
               Team Collaboration
             </span>
           </div>
@@ -311,7 +315,7 @@
     </section>
     <!-- Projects Section -->
     <section class="mb-16" id="projects">
-      <h2 class="text-3xl font-bold text-highlight mb-10 flex items-center dark:text-white">
+      <h2 class="text-3xl font-bold text-highlight mb-10 flex items-center dark:text-white" data-aos="fade-up">
         <i class="fa-solid fa-folder-open text-primary mr-3">
         </i>
         Featured Projects
@@ -319,7 +323,8 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <!-- Project 1 -->
         <div
-          class="bg-white rounded-3xl shadow-bento overflow-hidden hover:shadow-bento-hover transition-all duration-300 flex flex-col h-[450px] dark:bg-gray-800"
+        data-aos="zoom-in" data-aos-delay="100"
+        class="bg-white rounded-3xl shadow-bento overflow-hidden hover:shadow-bento-hover transition-all duration-300 flex flex-col h-[450px] dark:bg-gray-800"
           id="project-1">
           <div class="h-48 bg-primary bg-opacity-10 relative">
             <img alt="data dashboard with retail sales charts, professional visualization, power bi"
@@ -360,7 +365,8 @@
         </div>
         <!-- Project 2 -->
         <div
-          class="bg-white rounded-3xl shadow-bento overflow-hidden hover:shadow-bento-hover transition-all duration-300 flex flex-col h-[450px] dark:bg-gray-800"
+        data-aos="zoom-in" data-aos-delay="100"
+        class="bg-white rounded-3xl shadow-bento overflow-hidden hover:shadow-bento-hover transition-all duration-300 flex flex-col h-[450px] dark:bg-gray-800"
           id="project-2">
           <div class="h-48 bg-secondary bg-opacity-10 relative">
             <img alt="ETL pipeline visualization with data flow and forecasting charts, python code, professional"
@@ -398,7 +404,7 @@
           </div>
         </div>
         <!-- Project 3 -->
-        <!-- <div class="bg-white rounded-3xl shadow-bento overflow-hidden hover:shadow-bento-hover transition-all duration-300 flex flex-col h-[450px] dark:bg-gray-800" id="project-3">
+        <!-- <div data-aos="zoom-in" data-aos-delay="100" class="bg-white rounded-3xl shadow-bento overflow-hidden hover:shadow-bento-hover transition-all duration-300 flex flex-col h-[450px] dark:bg-gray-800" id="project-3">
        <div class="h-48 bg-accent bg-opacity-10 relative">
         <img alt="e-commerce product analysis dashboard with scatter plots, bar charts, professional visualization" class="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/6503aa4e92-eff3af8c59db3049524e.png"/>
         <div class="absolute top-4 right-4 bg-white rounded-full px-3 py-1 text-xs font-medium text-accent dark:bg-gray-800">
@@ -428,7 +434,7 @@
        </div>
       </div> -->
         <!-- Project 4 -->
-        <!-- <div class="bg-white rounded-3xl shadow-bento overflow-hidden hover:shadow-bento-hover transition-all duration-300 flex flex-col h-[450px] dark:bg-gray-800" id="project-4">
+        <!-- <div data-aos="zoom-in" data-aos-delay="100" class="bg-white rounded-3xl shadow-bento overflow-hidden hover:shadow-bento-hover transition-all duration-300 flex flex-col h-[450px] dark:bg-gray-800" id="project-4">
        <div class="h-48 bg-highlight bg-opacity-10 relative">
         <img alt="covid-19 data visualization dashboard with trend lines and map, professional analysis" class="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/37622fa898-513d5be9de8d36a8ca98.png"/>
         <div class="absolute top-4 right-4 bg-white rounded-full px-3 py-1 text-xs font-medium text-highlight dark:bg-gray-800 dark:text-white">
@@ -464,7 +470,7 @@
        </div>
       </div> -->
         <!-- Project 5 -->
-        <!-- <div class="bg-white rounded-3xl shadow-bento overflow-hidden hover:shadow-bento-hover transition-all duration-300 flex flex-col h-[450px] dark:bg-gray-800" id="project-5">
+        <!-- <div data-aos="zoom-in" data-aos-delay="100" class="bg-white rounded-3xl shadow-bento overflow-hidden hover:shadow-bento-hover transition-all duration-300 flex flex-col h-[450px] dark:bg-gray-800" id="project-5">
        <div class="h-48 bg-primary bg-opacity-10 relative">
         <img alt="netflix data visualization dashboard with content analysis, professional design" class="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/210fd530bd-517f7ff8b14b79522610.png"/>
         <div class="absolute top-4 right-4 bg-white rounded-full px-3 py-1 text-xs font-medium text-primary dark:bg-gray-800">
@@ -501,7 +507,7 @@
       </div> -->
         <!-- More Projects Card -->
         <div
-          class="bg-gradient-to-br from-primary to-secondary rounded-3xl shadow-bento overflow-hidden hover:shadow-bento-hover transition-all duration-300 flex flex-col h-[450px] justify-center items-center text-center p-8"
+        data-aos="zoom-in" data-aos-delay="100" class="bg-gradient-to-br from-primary to-secondary rounded-3xl shadow-bento overflow-hidden hover:shadow-bento-hover transition-all duration-300 flex flex-col h-[450px] justify-center items-center text-center p-8"
           id="more-projects">
           <div class="text-white mb-6">
             <i class="fa-solid fa-code-branch text-6xl">
@@ -523,7 +529,7 @@
     <!-- Resume Section -->
     <section class="mb-16" id="resume">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div
+        <div data-aos="fade-up"
           class="md:col-span-2 bg-white rounded-3xl shadow-bento p-8 hover:shadow-bento-hover transition-shadow duration-300 dark:bg-gray-800">
           <h2 class="text-2xl font-bold text-highlight mb-6 flex items-center dark:text-white">
             <i class="fa-solid fa-briefcase text-secondary mr-3">
@@ -531,7 +537,7 @@
             Work Experience
           </h2>
           <div class="space-y-6">
-            <div class="border-l-4 border-secondary pl-4 pb-6">
+            <div class="border-l-4 border-secondary pl-4 pb-6" data-aos="fade-up" data-aos-delay="200">
               <div class="flex justify-between items-start">
                 <h3 class="text-xl font-semibold text-highlight dark:text-white">
                   Data Analyst
@@ -578,7 +584,7 @@
         </div> -->
           </div>
         </div>
-        <div
+        <div data-aos="fade-up"
           class="bg-white rounded-3xl shadow-bento overflow-hidden hover:shadow-bento-hover transition-all duration-300 dark:bg-gray-800">
           <div class="h-48 bg-gradient-to-r from-highlight to-secondary flex items-center justify-center">
             <i class="fa-solid fa-file-pdf text-white text-6xl">
@@ -603,13 +609,13 @@
     </section>
     <!-- Contact Section -->
     <section class="mb-16" id="contact">
-      <h2 class="text-3xl font-bold text-highlight mb-10 flex items-center dark:text-white">
+      <h2 class="text-3xl font-bold text-highlight mb-10 flex items-center dark:text-white" data-aos="fade-up">
         <i class="fa-solid fa-envelope text-accent mr-3">
         </i>
         Get In Touch
       </h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div
+        <div data-aos="fade-right" data-aos-delay="100"
           class="bg-white rounded-3xl shadow-bento p-6 hover:shadow-bento-hover transition-all duration-300 hover:scale-105 dark:bg-gray-800"
           id="email-contact">
           <div class="bg-primary bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mb-4 mx-auto">
@@ -627,7 +633,7 @@
               Send Email
             </span></a>
         </div>
-        <div
+        <div data-aos="fade-up" data-aos-delay="200"
           class="bg-white rounded-3xl shadow-bento p-6 hover:shadow-bento-hover transition-all duration-300 hover:scale-105 dark:bg-gray-800"
           id="linkedin-contact">
           <div class="bg-secondary bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mb-4 mx-auto">
@@ -646,7 +652,7 @@
               Connect
             </span></a>
         </div>
-        <div
+        <div data-aos="fade-left" data-aos-delay="300"
           class="bg-white rounded-3xl shadow-bento p-6 hover:shadow-bento-hover transition-all duration-300 hover:scale-105 dark:bg-gray-800"
           id="github-contact">
           <div class="bg-accent bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mb-4 mx-auto">
@@ -728,6 +734,7 @@
 
     </div>
   </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="script.js"></script>
 </body>
 
